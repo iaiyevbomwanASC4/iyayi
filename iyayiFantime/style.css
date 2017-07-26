@@ -1,0 +1,12 @@
+body{
+    margin: 50px
+}
+html{
+    background-color:steelblue
+}
+p{
+    font-size: 20px
+}
+#quote{
+    background-color: gold;
+}
