@@ -1,0 +1,17 @@
+body{
+    background-color: black
+}
+
+#logo{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
+}
+
+#coverman{
+    height: auto; 
+    width: auto;  
+    max-width: 300px; 
+    max-height: 300px;
+}

@@ -13,6 +13,7 @@ var alieny = 100
 function setup() {
   createCanvas(1000,windowHeight)
   background(25,25,25)
+  text ("Space Invaders")
 }
 
 function draw() {
