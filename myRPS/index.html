@@ -1,8 +1,22 @@
 <html>
     <head>
         <title>Rock, Paper, Scissors ... Shoot!</title>
+        <!--firebase-->
+        <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        var config = {
+        apiKey: "AIzaSyApXF9ipbqB55qkrFTwEhEP15rqdT7Qdq4",
+        authDomain: "myrps-e5b1c.firebaseapp.com",
+        databaseURL: "https://myrps-e5b1c.firebaseio.com",
+        projectId: "myrps-e5b1c",
+        storageBucket: "myrps-e5b1c.appspot.com",
+        messagingSenderId: "247872684542"
+        };
+        firebase.initializeApp(config);
+        </script>
         <link href="main.css" rel="stylesheet">
-        <script="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="app.js"></script>
         
     </head>
@@ -12,15 +26,15 @@
         </div>
         <div>
             <h2>Shoot ya shot below:</h2>
-            <button type="button" onclick='rock()'>Rock</button>
-            <button type="button" onclick='paper()'>Paper</button>
-            <button type="button" onclick='scissors()'>Scissors</button>
+            <button id="rock" type="button" onclick='rock()'>Rock</button>
+            <button id="paper" type="button" onclick='paper()'>Paper</button>
+            <button id="scissors" type="button" onclick='scissors()'>Scissors</button>
         </div>
+        <div id="choice"></div>
+        <div id="cpuchoice"></div>
+        <div id="score"></div>
         <div>
-            <h2>The CPU chooses </h2>
-        </div>
-        <div>
-            <h3>As a result, you have </h3>
+            <button id="refresh" type="button" onclick="history.go(0)">Try Again</button>
         </div>
     </body>
 </html>

@@ -1,4 +1,7 @@
 body{
-    background-image: url('https://giphy.com/gifs/xUA7aXaw2Aq29J657W/html5');
-    text-align: center
+    background-color: #484;
+    font-size: 40px;
+    text-align: center;
+    /*background: url("https://media.giphy.com/media/26gsq8fim9nnlRUgU/giphy.gif"); 
+    background-size: cover; */
 }

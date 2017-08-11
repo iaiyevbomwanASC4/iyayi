@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SHOOT!</title>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+         <script src="https://www.gstatic.com/firebasejs/4.2.0/firebase.js"></script>
+    <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDYpMdsWI8APEtNo8NzZ_0RaoSCM59QuDk",
+    authDomain: "rpsgame-a9b1f.firebaseapp.com",
+    databaseURL: "https://rpsgame-a9b1f.firebaseio.com",
+    projectId: "rpsgame-a9b1f",
+    storageBucket: "",
+    messagingSenderId: "526167447620"
+  };
+  firebase.initializeApp(config);
+</script>       
+        
+        <script src="main.js"></script> 
+        <link href="main.css" rel= "stylesheet">  
+            
+    </head>
+    <body>
+        <center>
+            <h1>ROCK!<br>
+            PAPER!<br>
+            SCISSORS!</h1>
+            <div>
+                <p class = "who" ></p>
+                <p class = "points" ></p>
+            </div>
+            <p> Choose your weapon!!!</p>
+            <button class = "zero" type="button">Rock</button>
+            <button class = "one" type="button">Paper</button>
+            <button class = "two" type="button">Scissors</button>
+            <div class="results"> 
+            </div>
+            <div class = "leaderBoard">
+            </div>
+            <div class = "quien">
+            </div>
+        </center>
+    </body>
+</html>
